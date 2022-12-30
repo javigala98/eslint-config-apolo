@@ -88,10 +88,10 @@ module.exports = {
 
     // require or disallow semicolons instead of ASI.
     // https://eslint.org/docs/latest/rules/semi
-    semi: 'never',
+    semi: ['error', 'never'],
 
     // enforce the consistent use of either backticks, double, or single quotes
     // https://eslint.org/docs/latest/rules/quotes
     quotes: ['error', 'single']
   }
-};
+}

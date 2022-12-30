@@ -8,4 +8,4 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/no-console
     'no-console': 'warn'
   }
-};
+}

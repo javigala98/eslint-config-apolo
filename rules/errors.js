@@ -85,10 +85,6 @@ module.exports = {
       }
     ],
 
-    // disallow empty static blocks.
-    // https://eslint.org/docs/latest/rules/no-empty-static-block
-    'no-empty-static-block': 'error',
-
     // disallow the use of eval().
     // https://eslint.org/docs/latest/rules/no-eval
     'no-eval': 'error',
@@ -129,4 +125,4 @@ module.exports = {
     // https://eslint.org/docs/latest/rules/yoda
     yoda: 'error'
   }
-};
+}
