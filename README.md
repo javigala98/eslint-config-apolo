@@ -8,20 +8,14 @@ This package provides .eslintrc configuration (without any Framework frontend pl
 
 ## Usage
 
-1- Install the correct versions of each package, which are listed by the command:
-
-```jsx
-npx install-peerdeps --dev eslint-config-apolo
-```
-
-2- Install eslint-config-apolo
+1- Install eslint-config-apolo
 
 ```jsx
 npm install --save-dev eslint-config-apolo // This will download the @latest version
 npm install --save-dev eslint-config-apolo@1.0.0 // Or can select version
 ```
 
-3- Add in “extends” of your .eslintrc file: “apolo”
+2- Add in “extends” of your .eslintrc file: “apolo”
 
 ```jsx
 {
