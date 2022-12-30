@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-apolo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration Apolo",
   "main": "./index.js",
   "exports": {
