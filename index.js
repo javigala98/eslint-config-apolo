@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   overrides: [
     {
-      files: ['*.ts'],
+      files: ['*.ts', '*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         project: ['tsconfig.json'],
@@ -19,6 +19,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:eslint-comments/recommended',
         'plugin:import/recommended',
+        'plugin:import/typescript',
         './rules/errors',
         './rules/strict',
         './rules/style',
@@ -26,10 +27,15 @@ module.exports = {
       ],
       rules: {},
       settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx']
+        },
         'import/resolver': {
+          typescript: {
+            project: ['tsconfig.json', 'package/tsconfig.json']
+          },
           node: {
-            paths: ['src'],
-            extensions: ['.ts']
+            project: ['tsconfig.json', 'package/tsconfig.json']
           }
         }
       }
